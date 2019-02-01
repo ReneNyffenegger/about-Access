@@ -22,6 +22,10 @@ sub dateValueTest() ' {
    db.execute("insert into dateValueTest values (#2012-12-12 12:12:12#, '2012-12-12 12:12:12')")
    db.execute("insert into dateValueTest values (#2001-01-01 00:00:00#, '2001-01-01 00:00:00')")
    db.execute("insert into dateValueTest values (#2023-12-31 23:59:59#, '2023-12-31 23-59:59')")
+ '
+ ' Using dateValue will not work on null values:
+ '
+ ' db.execute("insert into dateValueTest values ( null                , 'null'               )")
 
 
  '
