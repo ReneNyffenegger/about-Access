@@ -31,4 +31,4 @@ from
    MSysObjects     obj                           left join
    MSysObjects     par on obj.ParentId = par.Id
 order by
-   obj.DateCreate
+   obj.Name
